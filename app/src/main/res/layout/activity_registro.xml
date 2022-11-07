@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Registro">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnRegresar"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Regresar"
+            android:textAlignment="center"
+            android:textColor="#005D98"
+            android:textSize="40sp"
+            app:backgroundTint="@color/white" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="233dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/monse"
+            android:gravity="center"
+            android:text="@string/registro"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="320dp"
+        android:layout_height="2dp"
+        android:background="#5C232323" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="170dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/degra"
+                android:fontFamily="@font/monse"
+                android:gravity="center"
+                android:text="@string/nombre"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                app:backgroundTint="@null" />
+
+            <EditText
+                android:id="@+id/EditNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:fontFamily="@font/monse"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="170dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/degra"
+                android:fontFamily="@font/monse"
+                android:gravity="center"
+                android:text="@string/email"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                app:backgroundTint="@null" />
+
+            <EditText
+                android:id="@+id/EditMail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:fontFamily="@font/monse"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="170dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/degra"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="@string/tel"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                app:backgroundTint="@null" />
+
+            <EditText
+                android:id="@+id/EditTel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:fontFamily="@font/monse"
+                android:inputType="phone" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="170dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/degra"
+                android:fontFamily="@font/monse"
+                android:gravity="center"
+                android:text="@string/Edad"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                app:backgroundTint="@null" />
+
+            <EditText
+                android:id="@+id/EditEdad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:fontFamily="@font/monse"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="170dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/degra"
+                android:fontFamily="@font/monse"
+                android:gravity="center"
+                android:text="@string/Sexo"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                app:backgroundTint="@null" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <RadioButton
+                    android:id="@+id/Masculino"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/monse"
+                    android:text="@string/Masculino"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/Femenino"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/monse"
+                    android:text="@string/Femenino"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/Otro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:fontFamily="@font/monse"
+                    android:text="@string/Otro"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="170dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/degra"
+                android:fontFamily="@font/monse"
+                android:gravity="center"
+                android:text="@string/Contra"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                app:backgroundTint="@null" />
+
+            <EditText
+                android:id="@+id/EditContra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:fontFamily="@font/monse"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/user"
+                android:layout_width="170dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/degra"
+                android:fontFamily="@font/monse"
+                android:gravity="center"
+                android:text="@string/user"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                app:backgroundTint="@null" />
+
+            <EditText
+                android:id="@+id/EditUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:fontFamily="@font/monse"
+                android:inputType="textPersonName" />
+
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/degra"
+                android:fontFamily="@font/monse"
+                android:gravity="center"
+                android:text="@string/Eddd"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                app:backgroundTint="@null" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="170dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/degra"
+                android:fontFamily="@font/monse"
+                android:gravity="center"
+                android:text="@string/Gustos"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                app:backgroundTint="@null" />
+
+            <CheckBox
+                android:id="@+id/Perrito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/monse"
+                android:text="@string/Perro"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:id="@+id/Gatito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/monse"
+                android:text="@string/Gato"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:id="@+id/Otre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/monse"
+                android:text="@string/Otre"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="170dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/degra"
+                android:fontFamily="@font/monse"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                app:backgroundTint="@null"
+                android:text="@string/Redes" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="20dp">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/face"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checkable="true"
+                    android:fontFamily="@font/monse"
+                    android:text="Facebook" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/insta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checkable="true"
+                    android:fontFamily="@font/monse"
+                    android:text="Instagram" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/tiktok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checkable="true"
+                    android:fontFamily="@font/monse"
+                    android:text="Tiktok" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/twitter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checkable="true"
+                    android:fontFamily="@font/monse"
+                    android:text="Twitter" />
+            </com.google.android.material.chip.ChipGroup>
+
+            <Button
+                android:id="@+id/Regist"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/degra"
+                android:fontFamily="@font/monse"
+                android:text="@string/Regist"
+                android:textSize="16sp"
+                app:backgroundTint="@null" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
